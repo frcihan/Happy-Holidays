@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 
-const Loading = styled.div`
+const Loader = styled.div`
 text-align: center;
 
 .lds-ellipsis {
@@ -62,10 +62,10 @@ text-align: center;
 }
 `
 
-export const Loader = () => {
+export const Loading = () => {
     return (
-        <Loading>
+        <Loader>
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-        </Loading>
+        </Loader>
     )
 }

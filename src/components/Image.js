@@ -7,6 +7,6 @@ const Img = styled.img`
     object-fit: cover;
 `
 
-export const UnsplashImage = ({ url, key }) => {
+export const Image = ({ url, key }) => {
     return <Img src={url} key={key} alt="" />
 }

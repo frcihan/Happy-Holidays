@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import { Heading } from "./components/Heading";
-import { Loader } from "./components/Loader";
-import { UnsplashImage } from "./components/UnsplashImage";
+import { Loading } from "./components/Loading";
+import { Image } from "./components/Image";
 
 import axios from "axios";
 import styled, {createGlobalStyle} from "styled-components";
@@ -60,11 +60,11 @@ const App = () => {
         dataLength={images.length}
         next={fetchImages}
         hasMore={true}
-        loader={<Loader />}
+        loader={<Loading />}
       >
         <WrapperImage>
           {images.map(image => (
-            <UnsplashImage url={image.urls.thumb} key={image.id} />
+            <Image url={image.urls.thumb} key={image.id} />
           ))}
         </WrapperImage>
       </InfiniteScroll>
