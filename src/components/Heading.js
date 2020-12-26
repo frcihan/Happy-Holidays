@@ -10,7 +10,7 @@ const Header = styled.header`
 
 const H1 = styled.h1`
     font-family: "Great Vibes", sans-serif;
-    font-size: 8rem;
+    font-size: 6rem;
 `
 
 export const Heading = () => {
